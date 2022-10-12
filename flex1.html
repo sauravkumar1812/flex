@@ -1,0 +1,254 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .rowone {
+        /* background-color: grey; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .rowtwo{
+            display:flex;
+        }
+        .rowthree{
+            display:flex;
+        }
+
+    .box {
+        margin: 6px;
+        width: 250px;
+        height: 200px;
+        background-color: brown;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+       font-weight: bold;
+       
+    }
+        .newsmallbox{
+            width: 90%;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: brown;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .smallbox{
+            width: 90%;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: brown;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+    .child-box {
+        margin: 10px;
+        
+       
+        display: flex;
+        flex-direction: row;
+    }
+    .child-box div{
+        margin: 2px;
+        width: 90%;
+        height: 30px;
+        border-radius: 4px;
+        /* border: 2px solid black; */
+        background-color: rgb(252, 252, 145);
+    }
+    .child-box0 div:nth-last-of-type(1){flex-grow: 4;}
+    .child-box0 div:nth-last-of-type(2){flex-grow: 4;}
+    .child-box0 div:nth-last-of-type(3){flex-grow: 4;}
+
+    .child-box1 div:nth-last-of-type(1){flex-grow: 3;}
+    .child-box1 div:nth-last-of-type(2){flex-grow: 3;}
+    .child-box1 div:nth-last-of-type(3){flex-grow: 3;}
+    .child-box1 div:nth-last-of-type(4){flex-grow: 3;}
+    
+    .child-box2 div:nth-last-of-type(1){flex-grow: 2;}
+    .child-box2 div:nth-last-of-type(2){flex-grow: 2;}
+    .child-box2 div:nth-last-of-type(3){flex-grow: 2;}
+    .child-box2 div:nth-last-of-type(4){flex-grow: 2;}
+    .child-box2 div:nth-last-of-type(5){flex-grow: 2;}
+    
+</style>
+
+<body>
+    <div class="rowone">
+        <div class="box">1
+            <div class="child-box0 child-box">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <div class="child-box1 child-box">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="child-box2 child-box">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+        </div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div class="rowtwo">
+        <div class="smallBox">1</div>
+        <div class="smallBox">2</div>
+        <div class="smallBox">3</div>
+        <div class="smallBox">4</div>
+       </div>
+       <div class="rowthree">
+        <div class="newsmallBox">1</div>
+        <div class="newsmallBox">2</div>
+        <div class="newsmallBox">3</div>
+        <div class="newsmallBox">4</div>
+        <div class="newsmallBox">5</div>
+       </div>
+</body>
+
+</html> -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>table</title>
+        <style>
+           .rowone{
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+        }
+            .rowtwo{
+                display:flex;
+            }
+            .rowthree{
+                display:flex;
+            }
+            .box{
+             margin: 6px;
+                width: 250px;
+                height: 200px;
+                background-color: brown;
+                 border: 2px solid black;
+                border-radius: 10px;
+                display: flex;
+               flex-direction: column;
+               font-weight:bold;     
+            }
+            
+        
+            .smallbox{
+                width: 90%;
+                height: 30px;
+                border: 2px solid black;
+                border-radius: 5px;
+                background-color: brown;
+                margin: 10px;
+                display:flex;
+                flex-direction:column;
+            }
+            .newsmallbox{
+               width: 90%;
+                height: 30px;
+                border: 2px solid black;
+                border-radius: 5px;
+                background-color: brown;
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            .child-box{
+                display: flex;
+                flex-direction: row;
+                margin: 10px;
+                /* background-color: brown; */
+            }
+            .child-box div{
+               margin: 2px;
+            width: 90%;
+            height: 30px;
+            border-radius: 4px;
+            /* border: 2px solid black; */
+            background-color: rgb(252, 252, 145);  
+                
+            }
+           .child-box0 div:nth-last-of-type(1){flex-grow: 4;}
+           .child-box0 div:nth-last-of-type(2){flex-grow: 4;}
+           .child-box0 div:nth-last-of-type(3){flex-grow: 4;} 
+           
+           .child-box1 div:nth-last-of-type(1){flex-grow: 3;}
+           .child-box1 div:nth-last-of-type(2){flex-grow: 3;}
+           .child-box1 div:nth-last-of-type(3){flex-grow: 3;}
+           .child-box1 div:nth-last-of-type(4){flex-grow: 3;}
+           
+           .child-box2 div:nth-last-of-type(1){flex-grow:  2;}
+           .child-box2 div:nth-last-of-type(2){flex-grow:  2;}
+           .child-box2 div:nth-last-of-type(3){flex-grow: 2;}
+           .child-box2 div:nth-last-of-type(4){flex-grow: 2;}
+           .child-box2 div:nth-last-of-type(5){flex-grow: 2;}
+          
+        </style>
+    </head>
+    <body>
+       <div class="rowone">
+        <div class="box">1 
+            <div class="child-box0 child-box">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="child-box1 child-box">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="child-box2 child-box">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>  
+        </div>
+    
+        <div class="box">2</div>
+        <div class="box">3</div>
+       </div>
+       <div class="rowtwo">
+        <div class="smallBox">1</div>
+        <div class="smallBox">2</div>
+        <div class="smallBox">3</div>
+        <div class="smallBox">4</div>
+       </div>
+       <div class="rowthree">
+        <div class="newsmallBox">1</div>
+        <div class="newsmallBox">2</div>
+        <div class="newsmallBox">3</div>
+        <div class="newsmallBox">4</div>
+        <div class="newsmallBox">5</div>
+       </div>
+    </body>
+    </html> 
